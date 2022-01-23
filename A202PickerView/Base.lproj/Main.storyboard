@@ -71,18 +71,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大吉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fER-Iy-jBG">
+                                <rect key="frame" x="78" y="54" width="223" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xzg-hB-ux1"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OLF-jP-FYX"/>
                     <connections>
+                        <outlet property="myLabel" destination="fER-Iy-jBG" id="XaR-E0-zrl"/>
                         <outlet property="theTextView" destination="J9h-zt-VN9" id="Lcs-EK-TWZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lc-eZ-Za9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="35"/>
+            <point key="canvasLocation" x="1853.6231884057972" y="34.821428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pwe-48-Y8f">

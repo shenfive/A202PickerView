@@ -10,6 +10,7 @@ import UIKit
 class Page2ViewController: UIViewController {
     
     @IBOutlet weak var theTextView: UITextView!
+    @IBOutlet weak var myLabel: UILabel!
     var bld = ""
     var str = ""
 
@@ -18,7 +19,27 @@ class Page2ViewController: UIViewController {
 
         print("page2 :\(bld) : \(str)")
         
-        theTextView.text += "\(str) \n \(bld) 型的運勢是......\n 大吉"
+        theTextView.text += "\(str) \n \(bld) 型的運勢是......\n"
+        myLabel.alpha = 0
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3.0,
+                                                       delay: 0.5) {
+            self.myLabel.alpha = 1
+            self.myLabel.center = self.view.center
+        } completion: { animation in
+            
+        }
+
+        
+        
         
         
     }
