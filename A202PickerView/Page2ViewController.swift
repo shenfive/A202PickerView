@@ -9,6 +9,7 @@ import UIKit
 
 class Page2ViewController: UIViewController {
     
+    @IBOutlet weak var theTextView: UITextView!
     var bld = ""
     var str = ""
 
@@ -16,17 +17,11 @@ class Page2ViewController: UIViewController {
         super.viewDidLoad()
 
         print("page2 :\(bld) : \(str)")
+        
+        theTextView.text += "\(str) \n \(bld) 型的運勢是......\n"
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
