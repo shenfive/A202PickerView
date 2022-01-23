@@ -18,7 +18,7 @@ class Page2ViewController: UIViewController {
 
         print("page2 :\(bld) : \(str)")
         
-        theTextView.text += "\(str) \n \(bld) 型的運勢是......\n"
+        theTextView.text += "\(str) \n \(bld) 型的運勢是......\n 大吉"
         
         
     }

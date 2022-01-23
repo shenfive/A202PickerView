@@ -12,8 +12,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var selectedAst: UILabel!
     @IBOutlet weak var selectedBlo: UILabel!
     
-    var astrological = ["請選擇你的星座","白羊宮","金牛宮","雙子宮","巨蟹宮","獅子宮","處女宮","天秤宮","天蠍宮","射手宮","摩羯宮","水瓶宮","雙魚宮"]
-       var bloudType = ["請選擇你的血型","A","B","O","AB"]
+    var astrological = ["請選擇星座","白羊宮","金牛宮","雙子宮","巨蟹宮","獅子宮","處女宮","天秤宮","天蠍宮","射手宮","摩羯宮","水瓶宮","雙魚宮"]
+       var bloudType = ["請選擇血型","A","B","O","AB"]
 
     @IBOutlet weak var myPickerView: UIPickerView!
     
@@ -21,6 +21,21 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         myPickerView.dataSource = self
         myPickerView.delegate = self
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("View Will Appear")
+        selectedAst.text = ""
+        selectedBlo.text = ""
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        myPickerView.selectRow(0, inComponent: 0, animated: true)
+        myPickerView.selectRow(0, inComponent: 1, animated: true)
     }
     
     
