@@ -73,6 +73,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         default:
             break
         }
+        if pickerView.selectedRow(inComponent: 0) != 0 &&
+            pickerView.selectedRow(inComponent: 1) != 0 {
+            self.performSegue(withIdentifier: "goNextPage", sender: nil)
+        }
+        
+        
+        
         
     }
     
