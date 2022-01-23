@@ -22,6 +22,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         myPickerView.dataSource = self
         myPickerView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(segue.identifier)
+        
+        switch segue.identifier{
+        case "goNextPage":
+            if let nextVC = segue.destination as? Page2ViewController{
+                nextVC.bld = selectedBlo.text ?? "unknow"
+                nextVC.str = selectedAst.text ?? "unknow"
+            }
+        default:
+            break
+        }
+        
+        
+        
+        
+    }
 
 
     

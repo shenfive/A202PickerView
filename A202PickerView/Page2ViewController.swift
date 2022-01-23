@@ -8,11 +8,14 @@
 import UIKit
 
 class Page2ViewController: UIViewController {
+    
+    var bld = ""
+    var str = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("page2")
+        print("page2 :\(bld) : \(str)")
     }
     
 
