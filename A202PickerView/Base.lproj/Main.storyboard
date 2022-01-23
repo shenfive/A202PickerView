@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="35.491071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Page2 View Controller-->
         <scene sceneID="YHn-HO-upR">
             <objects>
-                <viewController id="4Oy-fI-jO6" sceneMemberID="viewController">
+                <viewController id="4Oy-fI-jO6" customClass="Page2ViewController" customModule="A202PickerView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jpb-LE-blC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
