@@ -8,6 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    @IBOutlet weak var selectedAst: UILabel!
+    @IBOutlet weak var selectedBlo: UILabel!
+    
     var astrological = ["請選擇你的星座","白羊宮","金牛宮","雙子宮","巨蟹宮","獅子宮","處女宮","天秤宮","天蠍宮","射手宮","摩羯宮","水瓶宮","雙魚宮"]
        var bloudType = ["請選擇你的血型","A","B","O","AB"]
 
@@ -55,6 +59,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("row:\(row)  component:\(component)")
+        switch component{
+        case 0:
+            if row != 0{
+                selectedBlo.text = bloudType[row]
+            }
+            break
+        case 1:
+            if row != 0{
+                selectedAst.text = astrological[row]
+            }
+            break
+        default:
+            break
+        }
         
     }
     
